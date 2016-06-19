@@ -282,8 +282,8 @@
                       </div>
                 </div>
              
-                <img src="images/prev.png" id="prev1" class="prev" >
-                <img src="images/next.png" id="next1" class="next">
+                <img src="images/prev.png" id="prev" class="prev" >
+                <img src="images/next.png" id="next" class="next">
              
                
          </div>
@@ -293,34 +293,13 @@
     <script>
         
     $(document).ready(function(){  
-            
-        /*
-          var $fun = function(){
-              var $fitem = $( ".slider .slide" ).eq(0);
-              $fitem.siblings().last().after($fitem);
-              
-          }
-          $('#next').click(function(){
-             $fun();
-          });
-          $('#prev').click(function(){
-              var $count = $( ".slider .slide" ).length -1;
-              var $litem = $( ".slider .slide" ).eq($count);
-              $litem.siblings().first().before($litem);
-          });  
-            
-           setInterval(function(){ 
-                $fun();
-           }, 1000);
-           
-        */
-         var $slider = function(wraper,item){
+     var $slider = function(wraper){
              
              //----------------------------------
              
-              this.$funnext = function(nextid){
-                $(nextid).click(function(){
-                      var $fitem = $(wraper+' '+item ).eq(0);
+              this.$funnext = function(){
+                $( wraper+' #next').click(function(){
+                      var $fitem = $(wraper+' .slide' ).eq(0);
                       $fitem.siblings().last().after($fitem);   
                 });
                 
@@ -328,32 +307,33 @@
               
              //----------------------------------
               
-              this.$funprev = function(previd){
+              this.$funprev = function(){
                  
-                 $(previd).click(function(){ 
+                 $(wraper+' #prev').click(function(){ 
                     
-                     var $count = $(wraper+' '+item).length -1;
-                     var $litem = $(wraper+' '+item).eq($count);
+                     var $count = $(wraper+' .slide').length -1;
+                     var $litem = $(wraper+' .slide').eq($count);
                      $litem.siblings().first().before($litem);  
                  });
                   
                 
               }
               
+             //---------------------------------- 
           }
          
 
-             var $ini1 = new $slider( '#slider','.slide');    // arg r the id names
-             $ini1.$funnext('#next');
-             $ini1.$funprev('#prev');  
+             var $ini1 = new $slider( '#slider');    // arg r the id names
+             $ini1.$funnext();
+             $ini1.$funprev();  
             
 
-             var $ini1 = new $slider( '#slider1','.slide');    // arg r the id names
-             $ini1.$funnext('#next1');
-             $ini1.$funprev('#prev1');             
+             var $ini1 = new $slider( '#slider1');    // arg r the id names
+             $ini1.$funnext();
+             $ini1.$funprev();              
             
         
-        });
+    });
              
     </script>
 </body>

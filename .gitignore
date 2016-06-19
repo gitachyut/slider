@@ -1,0 +1,360 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Untitled Document</title>
+
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<style>
+.slider{  
+    width: 85%;
+    margin: 15px auto;
+    background-color:white;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    position: relative;
+    height:270px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+}
+
+.slide{  
+    width: 16%;
+    float: left;
+    display: inline;
+    margin: 0 18px;
+   
+}
+
+.slide .info{
+    margin: 25px;
+    text-align: center;
+    width: 150px;
+    font-family: sans-serif;
+}
+
+.slide > img{    
+    
+    margin: 0 auto;
+    height:150px; 
+}
+
+.prev{
+    position: absolute;
+    left: 0;
+    top:40%;
+    font-size: 30px;
+    z-index: 10;
+   
+}
+
+.next{
+    position: absolute;
+    right:0;
+    top: 40%;
+    font-size: 30px;
+    z-index: 10;
+    
+}
+
+.none{
+    display: none;
+}
+
+
+@media only screen and  (max-width: 980px) {   
+    .slide{  
+    width: 25%;
+    float: left;
+    display: inline;
+    margin: 0 20px;
+   
+    }   
+}
+
+
+@media only screen and  (max-width: 600px) {   
+    .slide{  
+    width: 35%;
+    float: left;
+    display: inline;
+    margin: 0 20px;
+   
+    }   
+}
+
+@media only screen and  (max-width: 400px) {   
+    .slide{  
+    width: 100%;
+    float: left;
+    display: inline;
+    
+        
+   
+    }   
+}    
+</style>
+</head>
+
+<body> 
+    
+         <div class="slider" id="slider" >
+             
+             
+                <div class="slide" >
+                      <img  src="images/1.jpg"  />
+                    
+                      <div class="info">
+                        <h5>Info dfsfsdfsd </h5>
+                        <p>Listing few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/2.jpg"  />
+                     <div class="info">
+                        <h5>Infodfdff </h5>
+                        <p>Listfddfdfzdfz  your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/3.jpg"  />
+                     <div class="info">
+                        <h5>Info abfdfzdfsfzsf</h5>
+                        <p>Listing few fofdfdffnderstanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/4.jpg"  />
+                     <div class="info">
+                        <h5>Info afdfdff</h5>
+                        <p>Listing ffffor your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/5.jpg"  />
+                     <div class="info">
+                        <h5>Info aff</h5>
+                        <p>Lisffffz few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/6.jpg"  />
+                     <div class="info">
+                        <h5>Info about me</h5>
+                        <p>Listing few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/7.jpg"  />
+                     <div class="info">
+                        <h5>Info about me</h5>
+                        <p>Listing few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/8.jpg"  />
+                     <div class="info">
+                        <h5>Info about me</h5>
+                        <p>Listing few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/9.jpg"  />
+                     <div class="info">
+                        <h5>Info about me</h5>
+                        <p>Listing few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img src="images/10.jpg"  />
+                     <div class="info">
+                        <h5>Info about me</h5>
+                        <p>Listing few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/11.jpg"  />
+                     <div class="info">
+                        <h5>Info about me</h5>
+                        <p>Listing few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img src="images/12.jpg"  />
+                     <div class="info">
+                        <h5>Info about me</h5>
+                        <p>Listing few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+             
+                <img src="images/prev.png" id="prev" class="prev" >
+                <img src="images/next.png" id="next" class="next">
+             
+               
+         </div>
+
+        <div class="slider" id="slider1" >
+             
+             
+                <div class="slide" >
+                      <img  src="images/1.jpg"  />
+                    
+                      <div class="info">
+                        <h5>Info dfsfsdfsd </h5>
+                        <p>Listing few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/2.jpg"  />
+                     <div class="info">
+                        <h5>Infodfdff </h5>
+                        <p>Listfddfdfzdfz  your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/3.jpg"  />
+                     <div class="info">
+                        <h5>Info abfdfzdfsfzsf</h5>
+                        <p>Listing few fofdfdffnderstanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/4.jpg"  />
+                     <div class="info">
+                        <h5>Info afdfdff</h5>
+                        <p>Listing ffffor your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/5.jpg"  />
+                     <div class="info">
+                        <h5>Info aff</h5>
+                        <p>Lisffffz few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/6.jpg"  />
+                     <div class="info">
+                        <h5>Info about me</h5>
+                        <p>Listing few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/7.jpg"  />
+                     <div class="info">
+                        <h5>Info about me</h5>
+                        <p>Listing few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/8.jpg"  />
+                     <div class="info">
+                        <h5>Info about me</h5>
+                        <p>Listing few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/9.jpg"  />
+                     <div class="info">
+                        <h5>Info about me</h5>
+                        <p>Listing few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img src="images/10.jpg"  />
+                     <div class="info">
+                        <h5>Info about me</h5>
+                        <p>Listing few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img  src="images/11.jpg"  />
+                     <div class="info">
+                        <h5>Info about me</h5>
+                        <p>Listing few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+                <div class="slide">
+                      <img src="images/12.jpg"  />
+                     <div class="info">
+                        <h5>Info about me</h5>
+                        <p>Listing few for your understanding,listing few for your.</p>
+                      </div>
+                </div>
+             
+                <img src="images/prev.png" id="prev1" class="prev" >
+                <img src="images/next.png" id="next1" class="next">
+             
+               
+         </div>
+
+    
+    <script type="text/javascript" src="js/jquery.js"></script> 
+    <script>
+        
+    $(document).ready(function(){  
+            
+        /*
+          var $fun = function(){
+              var $fitem = $( ".slider .slide" ).eq(0);
+              $fitem.siblings().last().after($fitem);
+              
+          }
+          $('#next').click(function(){
+             $fun();
+          });
+          $('#prev').click(function(){
+              var $count = $( ".slider .slide" ).length -1;
+              var $litem = $( ".slider .slide" ).eq($count);
+              $litem.siblings().first().before($litem);
+          });  
+            
+           setInterval(function(){ 
+                $fun();
+           }, 1000);
+           
+        */
+         var $slider = function(wraper,item){
+             
+             //----------------------------------
+             
+              this.$funnext = function(nextid){
+                $(nextid).click(function(){
+                      var $fitem = $(wraper+' '+item ).eq(0);
+                      $fitem.siblings().last().after($fitem);   
+                });
+                
+              }
+              
+             //----------------------------------
+              
+              this.$funprev = function(previd){
+                 
+                 $(previd).click(function(){ 
+                    
+                     var $count = $(wraper+' '+item).length -1;
+                     var $litem = $(wraper+' '+item).eq($count);
+                     $litem.siblings().first().before($litem);  
+                 });
+                  
+                
+              }
+              
+          }
+         
+
+             var $ini1 = new $slider( '#slider','.slide');    // arg r the id names
+             $ini1.$funnext('#next');
+             $ini1.$funprev('#prev');  
+            
+
+             var $ini1 = new $slider( '#slider1','.slide');    // arg r the id names
+             $ini1.$funnext('#next1');
+             $ini1.$funprev('#prev1');             
+            
+        
+        });
+             
+    </script>
+</body>
+</html>
